@@ -69,7 +69,10 @@ async function connectDB() {
         //await client.close();
     }
 }
-connectDB().catch(console.dir);
+connectDB().catch(()=>{
+    console.dir
+}
+);
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
